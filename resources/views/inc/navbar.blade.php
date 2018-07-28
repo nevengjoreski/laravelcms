@@ -11,10 +11,13 @@
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item {{Request::is('contact') === false ?: 'active'}}">
-                <a class="nav-link" href="contact">Contact</a>
+                <a class="nav-link" href="/contact">Contact</a>
             </li>
             <li class="nav-item {{Request::is('messages') === false ?: 'active'}}">
-                <a class="nav-link" href="messages">Messages</a>
+                <a class="nav-link" href="/messages">Messages</a>
+            </li>
+            <li class="nav-item {{Request::is('todo') === false ?: 'active'}}">
+                <a class="nav-link" href="/todo">Todo</a>
             </li>
         </ul>
     </div>
